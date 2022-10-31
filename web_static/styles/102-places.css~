@@ -59,6 +59,7 @@ article>h2 {
     background-position: center top;
     line-height: 9em;
     text-align: center;
+    flex: 0% 0% ;
 }
 
 .max_guest {
@@ -139,13 +140,6 @@ article>h2 {
 {
     .places h1 {
         width: 90%;
-    }
-}
-@media only screen and (max-width: 410px) 
-{
-    .information {
-
-        margin-top: 2%;
     }
 }
 @media only screen and (max-width: 381px) 
