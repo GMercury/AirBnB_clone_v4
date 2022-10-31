@@ -25,7 +25,7 @@
 
     <!-- jQUERY -->
     <SCRIPT src="https://code.jquery.com/jquery-3.2.1.min.js"></SCRIPT>
-    <SCRIPT src="{{ url_for('static', filename='scripts/2-hbnb.js') + '?' + cache_id }}"></SCRIPT>
+    <SCRIPT src="{{ url_for('static', filename='scripts/3-hbnb.js') + '?' + cache_id }}"></SCRIPT>
   </HEAD>
 
   <!-- **********************
@@ -101,65 +101,6 @@
 	<!-- **********************
 	     BEGIN 1 PLACE
 	     ********************** -->
-
-	  {% for place in places|sort(attribute='name') %}
-
-	  <ARTICLE>
-
-	    <DIV class="title">
-
-	      <H2>{{ place.name }}</H2>
-
-	      <DIV class="price_by_night">
-
-		{{ place.price_by_night }}
-
-	      </DIV>
-	    </DIV>
-	    <DIV class="information">
-	      <DIV class="max_guest">
-		<I class="fa fa-users fa-3x" aria-hidden="true"></I>
-
-		<BR />
-
-		{{ place.max_guest }} Guests
-
-	      </DIV>
-	      <DIV class="number_rooms">
-		<I class="fa fa-bed fa-3x" aria-hidden="true"></I>
-
-		<BR />
-
-		{{ place.number_rooms }} Bedrooms
-	      </DIV>
-	      <DIV class="number_bathrooms">
-		<I class="fa fa-bath fa-3x" aria-hidden="true"></I>
-
-		<BR />
-
-		{{ place.number_bathrooms }} Bathroom
-
-	      </DIV>
-	    </DIV>
-
-	    <!-- **********************
-		 USER
-		 **********************  -->
-
-	    <DIV class="user">
-
-	      <STRONG>Owner: {{ users[place.user_id] }}</STRONG>
-
-	    </DIV>
-	    <DIV class="description">
-
-	      {{ place.description }}
-
-	    </DIV>
-
-	  </ARTICLE> <!-- End 1 PLACE Article -->
-
-	  {% endfor %}
 
 	</SECTION>
       </DIV>
